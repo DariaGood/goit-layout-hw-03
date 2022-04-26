@@ -1,0 +1,244 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Arial', sans-serif;
+    background-color: #E5E5E5;
+
+
+}
+
+         /* Страница студия */
+
+/*  Шапка */
+
+/* Лого */
+
+.logo {
+    font-family: Raleway, sans-serif;
+    color: #212121;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1,2;
+
+}
+
+.logo_blue {
+    color: #2196F3;
+}
+
+.logo_white {
+    color: #FFFFFF;
+}
+
+.logo_black {
+    color: #000000;
+}
+
+     /*  Навигация  в шапке */
+
+/* Цвет кнопки в шапке*/
+
+.navigation_general {
+    color: #212121;
+}
+
+
+.navigation_general:hover {
+    color: #2196F3;
+}
+
+
+.navigation {
+    color: #212121
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1,14;
+}
+
+.navigation:hover {
+    color: #2196F3;
+}
+
+
+    /* Адрес в шапке */
+
+
+.adress {
+    color: #757575;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1,14;
+}
+
+.adress:hover {
+    color: #2196F3;
+}
+
+.adress_list {
+    color: #757575;
+}
+
+.adress_list:hover {
+    color: #2196F3;
+}
+
+
+
+/* Body */
+
+/* Решения */
+
+.solutions {
+    background-color: #2F303A;
+}
+
+
+.solutions_text {
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1,36;
+}
+
+.button_order {
+    background-color: #2196F3;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1,87;
+    cursor: pointer
+}
+
+                                           
+/* Преимущества */
+
+
+.benefits_list > li > h3 {
+    color: #212121;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1,14;
+}
+
+.benefits_text > li > p {
+    color: #757575;
+    font-size: 14px;
+    line-height: 1,71;
+}
+
+
+/* Наша команда*/
+
+.name_h2 > h2 {
+    color: #212121;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1,16;
+    text-align: center;
+}
+
+.our_team_people > li {
+    background-color: #FFFFFF;
+}
+.team_name {
+    color: #212121;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1,18;
+}
+
+.team_position {
+    color: #757575;
+    font-size: 16px;
+    line-height: 1,18;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: #2F303A;
+}
+
+/* Адресс footer */
+
+.adress_footer {
+    font-size: 14px;
+    line-height: 1,7;
+    color:  rgba(255, 255, 255, 0.6);  
+}
+
+.adress_footer:hover {
+    color:  rgba(255, 255, 255, 1);
+}
+
+.adress_footer_list {
+    color:  rgba(255, 255, 255, 0.6);
+}
+
+.adress_footer_list:hover {
+    color:  rgba(255, 255, 255, 1);
+}
+
+
+
+
+
+    
+
+        /* Страница портфолио */
+
+
+   
+
+/* Body */
+
+/*Кнопки фильтра*/
+
+.text {
+    background-color: #F5F4FA;
+    color: #212121;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1,62;
+    cursor: pointer;
+  }
+
+.text:hover,
+.text:focus {
+    background-color: #2196F3;
+    color: #FFFFFF;  
+}
+
+.text_filter.text {
+    background-color: #F5F4FA;
+    color: #212121;
+}
+
+.text_filter:hover,
+.text_filter:focus {
+    background-color: #2196F3;
+    color: #FFFFFF;
+}
+
+/* Список проектов */
+
+.name_projects > li > h2 {
+    color: #212121;;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+}
+
+.name_projects > li > p {
+    color: #757575;
+    font-size: 16px;
+    line-height: 1,18;
+}
+
+
+
+
+
+
+
+
