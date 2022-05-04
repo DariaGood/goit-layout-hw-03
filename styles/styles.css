@@ -1,6 +1,9 @@
 body {
     font-family: 'Roboto', sans-serif;
     background-color: #E5E5E5;
+    width: 1600px;
+    margin: 0 auto;
+    padding: 0 15px;
 
 }
 
@@ -17,10 +20,24 @@ body {
 
 /*  Шапка */
 
+.header {
+    border: 0em;
+    width: 1200px;
+    margin-left: 215px;
+    margin-right: 215px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
 /* Лого */
 
 .logo {
     text-decoration: none;
+
 }
 
 .logo_main {
@@ -63,6 +80,24 @@ body {
 
 /* Цвет кнопки в шапке*/
 
+.list_navigation {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.li_gen_nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    display: block;
+    margin-left: 50px;    
+}
+
+.list_navigation.li_gen_nav:not(:last-child) {
+    margin-left: 50px;
+}
+
 
 .navigation {
     color: var(--c212121);
@@ -71,6 +106,7 @@ body {
     line-height: 1.14;
     text-decoration: none;
     letter-spacing: 0.02em;
+    padding: 32px 0;
     
 }
 
@@ -82,7 +118,13 @@ body {
 
 .li_no_marker {
     list-style-type: none;
+    
 }
+
+.adress_list.adress:not(:last-child) {
+    margin-left: 50px;
+}
+
 
 
     /* Адрес в шапке */
@@ -95,12 +137,26 @@ body {
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    display: block;
+    margin-left: 50px;
+    padding: 32px 0;
+
 }
 
 .adress:hover {
     color: var(--blue);
     text-decoration: none;
 }
+
+.adress_list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
 
 
 
@@ -110,16 +166,20 @@ body {
 
 .solutions {
     background-color: #2F303A;
+    text-align: center;
 }
 
 
 .solutions_text {
+    margin-top: 0;
+    margin-bottom: 0;
     color: var(--white);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+
 }
 
 .button_order {
@@ -129,12 +189,27 @@ body {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
-    cursor: pointer
+    cursor: pointer;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 294px;
 }
 
                                            
 /* Преимущества */
 
+.benefits {
+    width: 1200px;
+    margin-top: 94px;
+    margin-bottom: 94px;
+    padding: 0 15px;
+}
+
+.benefits_list {
+    width: 1200px;
+    margin: 0;
+    padding:0;
+}
 
 .benefits_list > li > h3 {
     color: var(--c212121);
@@ -143,6 +218,12 @@ body {
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
 }
 
 .benefits_text > li > p {
@@ -150,29 +231,80 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    margin-top: 10px;
+    margin-bottom: 0%;
+    padding: 0;
 }
+/* Чем мы занимаемся */
 
+.we_do {
+    width: 1200px;
+    margin-top: 94px;
+    margin-bottom: 94px;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 15px;
+}
 
 /* Наша команда*/
 
-.name_h2 > h2 {
+.name_h2 {
     color: var(--c212121);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
-    text-align: center;
     letter-spacing: 0.03em;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
+
+.our_team {
+    width: 1600px;
+    padding: 0 15px;
+    margin-top: 94px;
+    margin-bottom: 94px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
 
 .our_team_people > li {
     background-color: #FFFFFF;
+    width: 270px;
+    padding: 0;
+    margin-top: 50px;
+    margin-bottom: 188px;
+    border: 0;
 }
+
+.photo {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 30px;
+    border: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
 .team_name {
     color: var(--c212121);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    padding: 0 15px;
+    text-align: center;
+
 }
 
 .team_position {
@@ -180,6 +312,12 @@ body {
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 90px;
+    text-align: center;
+    padding: 0 15px 30px 15px;
+
 }
 
 
@@ -187,9 +325,28 @@ body {
 
 .footer {
     background-color: #2F303A;
+    width: 1600px;
+    padding: 0;
 }
 
+.footer_text {
+    width: 1200px;
+}
+
+.logo_footer {
+    display: block;
+    padding: 60px 15px 0 15px;
+    margin: 60px 0 20px 215px;
+}
+
+
 /* Адресс footer */
+
+.adress_footer_list {
+    margin: 11px 0 60px 215px;
+    padding: 0 15px;
+}
+
 
 .adress_footer {
     font-size: 14px;
@@ -199,6 +356,7 @@ body {
     font-style: normal;
     text-decoration: none;
 }
+
 
 .adress_footer:hover {
     color:  rgba(255, 255, 255, 1);
@@ -220,12 +378,40 @@ body {
 
         /* Страница портфолио */
 
+/*  Шапка */
 
-   
+
+.header_border {
+    border-bottom-style:solid;
+    border-width: 1px;
+    border-color: #ECECEC;
+    padding: 0;
+    
+}
+
 
 /* Body */
 
 /*Кнопки фильтра*/
+
+.nav_button {
+    width: 611px;
+    margin-top: 94px;
+    margin-bottom: 34px;
+    margin-left: 495px;
+    margin-right: auto;
+    padding: 0;
+
+}
+
+.li_buttom_padding {
+    display: block;
+}
+
+.li_buttom_padding:last-child {
+    display: block;
+    padding-bottom: 60px;
+}
 
 .text {
     background-color: #F5F4FA;
@@ -236,6 +422,31 @@ body {
     letter-spacing: 0.03em;
     color: #212121;
     cursor: pointer;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 6px 22px;
+    text-align: center;
+  }
+
+  .button_one {
+    min-width: 73px;
+  }
+
+  .button_two {
+    min-width: 128px;
+  }
+
+
+  .button_tree {
+    min-width: 145px;
+  }
+
+  .button_four {
+    min-width: 103px;
+  }
+
+  .button_five {
+    min-width: 130px;
   }
 
 .text:focus,
@@ -245,6 +456,24 @@ body {
 }
 
 /* Список проектов */
+
+.projects {
+    width: 1200px;
+    margin: 94px 215px;
+    padding: 0 15px;
+}
+
+.projects_item {
+    width: 370px;
+    height: 404px;
+}
+
+.name_projects {
+    width: 1200px;
+    margin-top: 34px;
+    margin-bottom: 94px;
+    padding: 0 15px;
+}
 
 .name_projects > li > h2 {
     color: var(--c212121);
@@ -260,6 +489,8 @@ body {
     line-height: 1.18;
     letter-spacing: 0.03em;
 }
+
+
 
 
 
