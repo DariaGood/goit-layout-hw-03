@@ -3,7 +3,7 @@ body {
     background-color: #E5E5E5;
     width: 1600px;
     margin: 0 auto;
-    padding: 0 15px;
+    
 
 }
 
@@ -17,6 +17,7 @@ body {
 .container {
     width: 1200px;
     margin-left: 215px;
+    padding: 0 15px;
     
 }
 
@@ -40,6 +41,8 @@ body {
 
 .logo {
     text-decoration: none;
+    display: block;
+    margin-right: 93px;
 
 }
 
@@ -92,13 +95,13 @@ body {
 .li_gen_nav {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    display: block;
-    margin-left: 50px;    
+    justify-content:center;
+    margin-right: 50px; 
+   
 }
 
 .list_navigation.li_gen_nav:not(:last-child) {
-    margin-left: 50px;
+    margin-right: 50px;
 }
 
 
@@ -121,6 +124,8 @@ body {
 
 .li_no_marker {
     list-style-type: none;
+
+    
     
 }
 
@@ -171,10 +176,9 @@ body {
 
 .solution_container {
     background-color: #2F303A;
-    display: block;
     height: 600px;
     text-align: center; 
-    box-sizing:border-box;
+    box-sizing:content-box;
 
 }
 
@@ -187,15 +191,15 @@ body {
     letter-spacing: 0.03em;
     text-transform: uppercase;
 
-    width: 696px;
+    max-width: 696px;
 
     display: block;
+    box-sizing: content-box;
     text-align: center; 
     padding: 200px 15px 0 15px;
     margin: 0 452px 30px 452px;
  
 }
-
 
 
 .button_order {
@@ -209,20 +213,14 @@ body {
     cursor: pointer;
 
     display: block;
+    box-sizing: content-box;
     margin: 30px 700px 294px 700px;
+    padding: 10px 32px;
 }
 
 
                                            
 /* Преимущества */
-
-.benefits {
-    box-sizing: border-box;
-    width: 1200px;
-    margin-top: 94px;
-    margin-bottom: 94px;
-    margin-left: 215px;
-}
 
 .benefits_flex {
     display: flex;
@@ -235,25 +233,28 @@ body {
 }
 
 
+
 .benefits_list {
     box-sizing: border-box;
+    width: 1200px;
+    margin-top: 94px;
+    margin-bottom: 94px;
+    margin-left: 215px;
+    margin-right: auto;
     padding: 0;
 }
 
 .benefits_list > li {
     box-sizing: border-box;
     width: 270px;
-    margin-left: 30px;
-    padding-right: 30px;
-
+  
+    padding-right: 0;
 
 }
 
-.benefits_list.li_benefits:not(:first-child) {
+.benefits_list > li:not(:first-child) {
     margin-left: 30px;
 }
-
-
 
 
 .benefits_list > li > h3 {
@@ -266,7 +267,7 @@ body {
     box-sizing: border-box;
     margin-top: 0;
     margin-bottom: 10px;
-    padding: 0;
+    padding: 0 2px;
 }
 
 .benefits_text > li > p {
@@ -274,18 +275,28 @@ body {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    box-sizing: border-box;
+    width: 270px;
     margin-top: 10px;
-    padding: 0;
+    margin-bottom: 0;
+    padding: 0 2px;
+
 }
+
+
+
+
+
+
 /* Чем мы занимаемся */
 
 .we_do {
+    box-sizing: border-box;
     width: 1200px;
     margin-top: 94px;
     margin-bottom: 94px;
     margin-left: 215px;
-    margin-right: auto;
-    box-sizing: border-box;
+    
 }
 
 .we_do_flex  {
@@ -295,8 +306,22 @@ body {
     margin-top: 50px;
     margin-bottom: 0;
     padding: 0;
-    margin-right: 0;
+    margin-right: auto;
+    margin-left: -15px;
 
+}
+
+.li_we_do_flex {
+    padding: 0;
+    margin-right: 0;
+    margin-left: 30px;
+    flex-basis: calc((100% - 90px) / 3);
+    flex-wrap: nowrap;
+}
+
+
+.we_do_flex > li:not(:first-child) {
+    margin-left: 30px;
 }
 
 
@@ -319,34 +344,32 @@ body {
     text-align: center;
 }
 
-.our_team {
-    width: 1600px;
-    padding: 0 15px;
-    margin-top: 94px;
-    margin-bottom: 94px;
-    margin-left: 0;
-    margin-right: 0;
-}
 
+
+.our_team_people {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: -30px;
+    margin-top: -30px;
+    padding: 0;
+
+}
 
 
 .our_team_people > li {
     background-color: #FFFFFF;
     width: 270px;
-    padding: 0;
-    margin-top: 50px;
-    margin-bottom: 188px;
+    padding: 0;  
+    box-sizing: border-box;
     border: 0;
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-top: 50px;
+    margin-bottom: 94px;
+    flex-basis: calc((100% - 120px) / 4);
 }
 
-.photo {
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 30px;
-    border: 0;
-    margin-left: 0;
-    margin-right: 0;
-}
+
 
 
 .team_name {
@@ -355,6 +378,7 @@ body {
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
+    box-sizing: border-box;
     display: block;
     margin-top: 30px;
     margin-bottom: 10px;
@@ -368,11 +392,12 @@ body {
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
+    box-sizing: border-box;
     display: block;
     margin-top: 10px;
-    margin-bottom: 90px;
+    margin-bottom: 30px;
     text-align: center;
-    padding: 0 15px 30px 15px;
+    padding: 0 15px;
 
 }
 
@@ -383,10 +408,12 @@ body {
     background-color: #2F303A;
     width: 1600px;
     padding: 0;
+
 }
 
 .footer_text {
     width: 1200px;
+    padding: 0;
 }
 
 .logo_footer {
