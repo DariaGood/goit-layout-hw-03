@@ -16,7 +16,8 @@ body {
 
 .container {
     width: 1200px;
-    margin-left: 215px;
+    margin-left: auto;
+    margin-right: auto;
     padding: 0 15px;
     
 }
@@ -175,10 +176,15 @@ body {
 
 
 .solution_container {
+    display: block;
+    box-sizing: content-box;
+    width: 1200px;
+    margin-left: 215px;
     background-color: #2F303A;
     height: 600px;
     text-align: center; 
     box-sizing:content-box;
+
 
 }
 
@@ -196,8 +202,8 @@ body {
     display: block;
     box-sizing: content-box;
     text-align: center; 
-    padding: 200px 15px 0 15px;
-    margin: 0 452px 30px 452px;
+    padding: 200px 25px 0 25px;
+    margin: 0 237px 30px 237px;
  
 }
 
@@ -212,9 +218,12 @@ body {
     letter-spacing: 0.03em;
     cursor: pointer;
 
+    min-width: 136px;
+
     display: block;
     box-sizing: content-box;
-    margin: 30px 700px 294px 700px;
+    text-align: center;
+    margin: 30px auto;
     padding: 10px 32px;
 }
 
@@ -224,12 +233,10 @@ body {
 
 .benefits_flex {
     display: flex;
-    justify-content:center;
+    justify-content:space-between;
     align-items: center;
-    margin-top: 94px;
-    margin-bottom: 94px;
-    margin-left: 215px;
-
+    margin-left: 94px;
+    margin-right: auto;
 }
 
 
@@ -237,17 +244,13 @@ body {
 .benefits_list {
     box-sizing: border-box;
     width: 1200px;
-    margin-top: 94px;
-    margin-bottom: 94px;
-    margin-left: 215px;
-    margin-right: auto;
+    margin: 94px auto;
     padding: 0;
 }
 
 .benefits_list > li {
     box-sizing: border-box;
     width: 270px;
-  
     padding-right: 0;
 
 }
@@ -291,11 +294,14 @@ body {
 /* Чем мы занимаемся */
 
 .we_do {
-    box-sizing: border-box;
+    display: block;
+    box-sizing:content-box;
     width: 1200px;
     margin-top: 94px;
     margin-bottom: 94px;
     margin-left: 215px;
+    padding: 0;
+    
     
 }
 
@@ -306,15 +312,15 @@ body {
     margin-top: 50px;
     margin-bottom: 0;
     padding: 0;
-    margin-right: auto;
-    margin-left: -15px;
+    margin-right: 0;
+    margin-left: -30px;
 
 }
 
 .li_we_do_flex {
     padding: 0;
     margin-right: 0;
-    margin-left: 30px;
+   
     flex-basis: calc((100% - 90px) / 3);
     flex-wrap: nowrap;
 }
@@ -348,9 +354,11 @@ body {
 
 .our_team_people {
     display: flex;
-    flex-wrap: nowrap;
+    justify-content: space-between;
     margin-left: -30px;
     margin-top: -30px;
+    margin-bottom: 0;
+    margin-right: auto;
     padding: 0;
 
 }
@@ -362,8 +370,8 @@ body {
     padding: 0;  
     box-sizing: border-box;
     border: 0;
+    margin-right: auto;
     margin-left: 30px;
-    margin-top: 30px;
     margin-top: 50px;
     margin-bottom: 94px;
     flex-basis: calc((100% - 120px) / 4);
@@ -378,6 +386,7 @@ body {
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
+   
     box-sizing: border-box;
     display: block;
     margin-top: 30px;
@@ -393,6 +402,7 @@ body {
     line-height: 1.18;
     letter-spacing: 0.03em;
     box-sizing: border-box;
+    
     display: block;
     margin-top: 10px;
     margin-bottom: 30px;
@@ -407,7 +417,9 @@ body {
 .footer {
     background-color: #2F303A;
     width: 1600px;
+    height: 252px;
     padding: 0;
+    margin-top: 0;
 
 }
 
@@ -419,14 +431,14 @@ body {
 .logo_footer {
     display: block;
     padding: 60px 15px 0 15px;
-    margin: 60px 0 20px 215px;
+    margin: 60px 0px 20px 0px;
 }
 
 
 /* Адресс footer */
 
 .adress_footer_list {
-    margin: 11px 0 60px 215px;
+    margin: 11px 0px 60px 0px;
     padding: 0 15px;
 }
 
