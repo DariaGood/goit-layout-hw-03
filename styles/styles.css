@@ -21,6 +21,7 @@ body {
     margin: 0 auto;
     padding: 0 15px;
     
+    
 }
 
 
@@ -177,14 +178,17 @@ body {
 
 
 .solution {
+    display: block;
+    box-sizing: border-box;
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    
     background-color: #2F303A;
-    text-align: center;
     padding: 200px 0px;
-    margin: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 
@@ -200,9 +204,10 @@ body {
 
     display: block;
     box-sizing: border-box;
+    
     text-align: center; 
     padding: 30px;
-    margin: 0;
+    margin: 0 auto;
  
 }
 
@@ -223,7 +228,7 @@ body {
     box-sizing: border-box;
 
     text-align: center;
-    margin: 0;
+    margin: 0 auto;
     padding: 10px 32px;
 }
 
@@ -236,7 +241,7 @@ body {
     display: block;
     box-sizing: border-box;
     margin: 0;
-    padding: 94px 0px 47px 0px;
+    padding: 94px 0px;
 
 }
 
@@ -298,7 +303,7 @@ body {
 /* Чем мы занимаемся */
 
 .we_do_section {
-    padding: 47px 0 47px 0;
+    padding: 94px 0px;
     margin: 0 auto;
 }
 
@@ -334,7 +339,7 @@ body {
 /* Наша команда*/
 
 .team_section {
-    padding: 47px 0px 94px 0px;
+    padding: 94px 0px;
 }
 
 .name_h2 {
@@ -516,11 +521,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0px 0px 16px 0px;
     flex-basis: 611px;
     list-style-type: none;
     margin-bottom: 50px;
     padding: 0px;
+    
+}
+
+.li_nav_flex {
+    margin-right: 8px
 }
 
 
@@ -541,7 +550,7 @@ body {
     
     display:block;
     box-sizing: border-box;
-    margin-right: 8px;
+    
   }
 
   
@@ -571,7 +580,6 @@ body {
   .button_five {
     min-width: 130px;
     border: none;
-    margin-right: 0px;
   }
 
   
@@ -597,12 +605,15 @@ body {
 
 .projects_item {
     width: 370px;
-    height: 404px;
     padding: 0;
     border-bottom-style:solid;
+    border-left-style: solid;
+    border-right-style: solid;
     border-width: 1px;
     border-color: #ECECEC;
 }
+
+
 
 .p_projects {
     padding: 20px 24px;
